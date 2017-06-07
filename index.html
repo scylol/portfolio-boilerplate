@@ -1,162 +1,189 @@
-<!doctype HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="utf-8">
+    <title>Donald Dobbin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
-    <title>J. Random Hacker</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 
 <body>
     <header>
 
-        <h1>J. Random Hacker</h1>
-        <nav class="main-nav">
-            <button class='contact'>Contact Me</button>
-        </nav>
+        <div class="info">
 
-        <img class="headshot" src="http://unsplash.it/150/150" alt="J. Random Hacker headshot">
+            <h1>Donald Joseph Dobbin III</h1>
 
-        <p class="about" id="about">
-            Hi, I'm J. Random Hacker, a full-stack web developer from Nowheresville, USA. I use React and Node.js to build web apps which
-            leave you with a minty fresh taste in your mouth. Outside of coding I enjoy watching <a href="https://www.youtube.com/watch?v=6SFNW5F8K9Y">this video</a>            on repeat.
-        </p>
-        <nav class="contact-links">
-            <ul>
-                <li class="contact-link contact-link-email"><a href="mailto:jrandomhacker@example.com">Email</a>
-                    <li class="contact-link contact-link-linkedin"><a href="https://www.linkedin.com">LinkedIn</a>
-                        <li class="contact-link contact-link-github"><a href="https://www.github.com">GitHub</a>
-            </ul>
-        </nav>
+            <p class="about" id="about">
+                Hi, I'm Donald Dobbin, a full-stack web developer from Keyport, New Jersey. I completed Thinkful's Web Development Full Time
+                Bootcamp in August 2017. I use React and Node.js to build web apps which leave you with a minty fresh taste
+                in your mouth.
+            </p>
 
+            <nav class="contact-links">
+                <ul>
+                    <li class="contact-link contact-link-linkedin"><a href="https://www.linkedin.com"><img class='linkedin-logo' src="images/linkedin-logo.png" onmouseover="this.src='images/linkedin-logo-teal.png'" onmouseout="this.src='images/linkedin-logo.png'" alt=""></a></li>
+                    <li class="contact-link contact-link-github"><a href="https://www.github.com/scylol"><img class='github-logo' src="images/github-logo.png" onmouseover="this.src='images/github-logo-teal.png'" onmouseout="this.src='images/github-logo.png'" alt=""></a></li>
+                </ul>
+                <!-- Instead of img tag, but a background img on the a tag in css, thats how we can handle the hover-->
+            </nav>
+
+            <nav class="main-nav">
+                <button class='contact'>Contact Me</button>
+                <div class='contact-form hidden'>
+                    <form action="https://formspree.io/djd3dobbin@gmail.com" method="POST">
+                        <label for="contact-form-name">Your Name</label>
+                        <input type="text" name="name" id="contact-form-name" placeholder="Grace Hopper">
+                        <label for="contact-form-email">Your Email Address</label>
+                        <input type="email" name="_replyto" id="contact-form-email" placeholder="grace@example.com">
+                        <label for="contact-form-message">Message</label>
+                        <textarea rows='10' name="message" id="contact-form-message"></textarea>
+                        <input class='submit' type="submit" value="Send message">
+                    </form>
+                </div>
+            </nav>
+
+
+        </div>
     </header>
     <div class='right-container'>
-        
 
-            <section class="project p1">
-                <h3>Frobnicator</h3>
-                <div class='main-content'>
-                    <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=1" alt="Frobnicator screenshot">
-                    <div class='description'>
-                        <p class="project-description">
-                            A frob which allows you to frobnicate other frobs.
-                        </p>
-                        <h2>Made With</h2>
-                        <ul class="project-stack">
-                            <li class="project-stack-item">
-                                React
-                            </li>
-                            <li class="project-stack-item">
-                                Redux
-                            </li>
-                            <li class="project-stack-item">
-                                Node.js
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="#"><button class='left-btn'>Live Demo</button></a>
-                    <a href="#"><button class='right-btn'>Source Code</button></a>
-                </div>
-            </section>
 
-            <section class="project p2">
-                <h3>Frobnicator</h3>
-                <div class='main-content'>
-                    <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=2" alt="Frobnicator screenshot">
-                    <div class='description'>
-                        <p class="project-description">
-                            A frob which allows you to frobnicate other frobs.
-                        </p>
-                        <h2>Made With</h2>
+        <section class="project p1">
+            <div class='main-content'>
+                <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=1" alt="Frobnicator screenshot">
+                <div class='description'>
+                    <h2>Frobnicator</h2>
+                    <p class="project-description">
+                        A frob which allows you to frobnicate other frobs. A frob which allows you to frobnicate other frobs. A frob which allows
+                        you to frobnicate other frobs. A frob which allows you to frobnicate other frobs. A frob which allows
+                        you to frobnicate other frobs.
+                    </p>
+                    <div class='made-with'>
+                        <h3>Made With</h3>
                         <ul class="project-stack">
                             <li class="project-stack-item">
-                                React
+                                <img class='react-logo' src="images/react-logo.png" alt=""> React
                             </li>
                             <li class="project-stack-item">
-                                Redux
+                                <img class='redux-logo' src="images/redux-logo.png" alt=""> Redux
                             </li>
                             <li class="project-stack-item">
-                                Node.js
+                                <img class='node-logo' src="images/nodejs-logo.png" alt=""> Node.js
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="project-links">
-                    <a href="#"><button class='left-btn'>Live Demo</button></a>
-                    <a href="#"><button class='right-btn'>Source Code</button></a>
-                </div>
-            </section>
-            <section class="project p3">
-                <h3>Frobnicator</h3>
-                <div class='main-content'>
-                    <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=3" alt="Frobnicator screenshot">
-                    <div class='description'>
-                        <p class="project-description">
-                            A frob which allows you to frobnicate other frobs.
-                        </p>
-                        <h2>Made With</h2>
+            </div>
+            <div class="project-links">
+                <a href="#"><button class='left-btn'>Live Demo</button></a>
+                <a href="#"><button class='right-btn'>Source Code</button></a>
+            </div>
+        </section>
+
+        <section class="project p2">
+            <div class='main-content'>
+                <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=2" alt="Frobnicator screenshot">
+                <div class='description'>
+                    <h2>Frobnicator</h2>
+                    <p class="project-description">
+                        A frob which allows you to frobnicate other frobs. A frob which allows you to frobnicate other frobs. A frob which allows
+                        you to frobnicate other frobs. A frob which allows you to frobnicate other frobs. A frob which allows
+                        you to frobnicate other frobs.
+                    </p>
+                    <div class='made-with'>
+                        <h3>Made With</h3>
                         <ul class="project-stack">
                             <li class="project-stack-item">
-                                React
+                                <img class='react-logo' src="images/react-logo.png" alt=""> React
                             </li>
                             <li class="project-stack-item">
-                                Redux
+                                <img class='redux-logo' src="images/redux-logo.png" alt=""> Redux
                             </li>
                             <li class="project-stack-item">
-                                Node.js
+                                <img class='node-logo' src="images/nodejs-logo.png" alt=""> Node.js
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="project-links">
-                    <a href="#"><button class='left-btn'>Live Demo</button></a>
-                    <a href="#"><button class='right-btn'>Source Code</button></a>
-                </div>
-            </section>
-            <section class="project p4">
-                <h3>Frobnicator</h3>
-                <div class='main-content'>
-                    <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=4" alt="Frobnicator screenshot">
-                    <div class='description'>
-                        <p class="project-description">
-                            A frob which allows you to frobnicate other frobs.
-                        </p>
-                        <h2>Made With</h2>
+            </div>
+            <div class="project-links">
+                <a href="#"><button class='left-btn'>Live Demo</button></a>
+                <a href="#"><button class='right-btn'>Source Code</button></a>
+            </div>
+        </section>
+        <section class="project p3">
+            <div class='main-content'>
+                <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=3" alt="Frobnicator screenshot">
+                <div class='description'>
+                    <h2>Frobnicator</h2>
+                    <p class="project-description">
+                        A frob which allows you to frobnicate other frobs. A frob which allows you to frobnicate other frobs. A frob which allows
+                        you to frobnicate other frobs. A frob which allows you to frobnicate other frobs. A frob which allows
+                        you to frobnicate other frobs.
+
+                    </p>
+                    <div class='made-with'>
+                        <h3>Made With</h3>
                         <ul class="project-stack">
                             <li class="project-stack-item">
-                                React
+                                <img class='react-logo' src="images/react-logo.png" alt=""> React
                             </li>
                             <li class="project-stack-item">
-                                Redux
+                                <img class='redux-logo' src="images/redux-logo.png" alt=""> Redux
                             </li>
                             <li class="project-stack-item">
-                                Node.js
-                            </li>
-                            <li class="project-stack-item">
-                                Node.js
-                            </li>
-                            <li class="project-stack-item">
-                                Node.js
+                                <img class='node-logo' src="images/nodejs-logo.png" alt=""> Node.js
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="project-links">
-                    <a href="#"><button class='left-btn'>Live Demo</button></a>
-                    <a href="#"><button class='right-btn'>Source Code</button></a>
+            </div>
+            <div class="project-links">
+                <a href="#"><button class='left-btn'>Live Demo</button></a>
+                <a href="#"><button class='right-btn'>Source Code</button></a>
+            </div>
+        </section>
+        <section class="project p4">
+            <div class='main-content'>
+                <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=4" alt="Frobnicator screenshot">
+                <div class='description'>
+                    <h2>Frobnicator</h2>
+                    <p class="project-description">
+                        A frob which allows you to frobnicate other frobs. A frob which allows you to frobnicate other frobs. A frob which allows
+                        you to frobnicate other frobs. A frob which allows you to frobnicate other frobs. A frob which allows
+                        you to frobnicate other frobs.
+                    </p>
+                    <div class='made-with'>
+                        <h3>Made With</h3>
+                        <ul class="project-stack">
+                            <li class="project-stack-item">
+                                <img class='react-logo' src="images/react-logo.png" alt=""> React
+                            </li>
+                            <li class="project-stack-item">
+                                <img class='redux-logo' src="images/redux-logo.png" alt=""> Redux
+                            </li>
+                            <li class="project-stack-item">
+                                <img class='node-logo' src="images/nodejs-logo.png" alt=""> Node.js
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </section>
-        
+            </div>
+            <div class="project-links">
+                <a href="#"><button class='left-btn'>Live Demo</button></a>
+                <a href="#"><button class='right-btn'>Source Code</button></a>
+            </div>
+        </section>
+
 
         <footer>
             <p>© 2017 Donald Dobbin. Made in the USA.</p>
         </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='app.js'></script>
 </body>
 
