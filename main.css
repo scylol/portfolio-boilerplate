@@ -65,9 +65,7 @@ header {
   padding: 0 50px;
 }
 
-.project-links {
-  
-}
+
 .project ul {
     display: flex;
     margin-bottom:0;
@@ -101,8 +99,14 @@ footer {
   border: none;
   color: white;
   font-weight: bold;
-  
+  cursor: pointer;
+}
 
+.left-btn {
+    margin-right: 10px;
+}
+.right-btn {
+    margin-left: 10px;
 }
 
 
@@ -143,5 +147,14 @@ footer {
     }
     .description {
         width: 40%;
+    }
+}
+
+@media(max-width: 576px) {
+    .project-image {
+        width: 100%;
+    }
+    .description {
+        width: 100%;
     }
 }
