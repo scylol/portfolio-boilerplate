@@ -174,9 +174,13 @@ textarea {
   
 }
 
+.img-container {
+    width: 40%;
+}
+
+
 .project-image {
-  width: 30%;
-  min-height: 300px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -259,7 +263,7 @@ footer p {
 
 /*Media Queries*/
 @media (max-width: 1500px) {
-  .project-image {
+  .img-container {
     width: 40%;
   }
   .description {
@@ -268,7 +272,7 @@ footer p {
 }
 
 @media (max-width: 1200px) {
-  .project-image {
+  .img-container {
     width: 45%;
   }
   .description {
@@ -293,7 +297,7 @@ footer p {
     flex-direction: column;
     align-items: center;
   }
-  .project-image {
+  .img-container {
     width: 80%;
     padding-bottom: 15px;
   }
@@ -307,7 +311,7 @@ footer p {
 }
 
 @media (max-width: 576px) {
-  .project-image {
+  .img-container {
     width: 80%;
   }
   .description {
