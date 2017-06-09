@@ -264,20 +264,25 @@ footer p {
 /*Media Queries*/
 @media (max-width: 1500px) {
   .img-container {
-    width: 40%;
+    width: 50%;
   }
   .description {
-    width: 40%;
+    width: 45%;
   }
 }
 
 @media (max-width: 1200px) {
+  body {
+    flex-direction: column;
+    height: 100%;
+  }
   .img-container {
     width: 45%;
   }
   .description {
     width: 45%;
   }
+  
 }
 
 @media (max-width: 992px) {
