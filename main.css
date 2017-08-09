@@ -16,6 +16,7 @@ h1 {
   
   font-size: 42px;
   margin: 0 0 30px 0;
+  
 }
 
 p {
@@ -148,10 +149,10 @@ textarea {
   background: #324851;
 }
 .p2 {
-  background: #4CAF50;
+  background: #325d6e;
 }
 .p3 {
-  background: #22987f;
+  background: #2a8975;
 }
 .p4 {
   background: #356b68;
@@ -190,7 +191,6 @@ textarea {
   min-height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 
@@ -259,6 +259,19 @@ footer p {
 
 .hidden {
     display: none;
+}
+
+.made-with {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.email {
+  font-size: 24px;
+  font-weight: bold;
+  color: #324851;
 }
 
 /*Media Queries*/
