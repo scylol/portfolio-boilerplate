@@ -274,6 +274,11 @@ footer p {
   color: #324851;
 }
 
+.gif {
+  display: flex;
+  justify-content: center;
+}
+
 /*Media Queries*/
 @media (max-width: 1500px) {
   .img-container {
