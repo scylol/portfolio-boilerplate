@@ -193,6 +193,18 @@ textarea {
   flex-direction: column;
 }
 
+.description-1 {
+  width: 50%;
+  padding-left: 0;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.base-header {
+  font-size: 36px;
+  text-align: center;
+}
 
 .project-stack-item {
     display: flex;
